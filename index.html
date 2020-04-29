@@ -4,26 +4,35 @@
 <head>
     <meta charset='UTF-8'>
     <title>Population graph app</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./styles.css">
     <script defer src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js'></script>
     <script defer src='./myChart.js'></script>
+    
 </head>
+
+<header>
+    <div>
+    <h1 class='h1'>Population graphs</h1>
+    </div>
+</header>
 
 <body>
     <div class='container-top'>
-        <h1 class='h1'>Population graphs</h1>
-</div>
-<div class='content'>
-    <p class='text'>Enter a three letter <a class='link' href="https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes" target='_blank'>country code</a></p>
-    <div>
-        <input class='textinput' placeholder='Country' type='text' id='country' maxlength='3'autofocus='on'/>
-        <button class='btn btn-outline-dark' id='renderBtn'>Render population graph</button>
+        <!img src="https://images.unsplash.com/photo-1461272395971-7c6ffaa435b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80"/>
+        </div>
+    <div class='content'>
+        <div class="tooltip">
+            <input class='textinput' placeholder='Country' type='text' id='country' maxlength='3'/>
+                <span class="tooltiptext">Enter a three letter <a class='link' href="https://en.wikipedia.org/wiki/ISO_3166-1#Current_codes" target='_blank'>country code</a></span>
+        </div>
+            <button class='btn btn-outline-dark' id='renderBtn'>Render population graph</button>
+        </div>
+        <div class='graph-container'>
+            <canvas id='myChart'></canvas>
+        </div>
     </div>
-    <div class='container'>
-        <canvas id='myChart'></canvas>
-    </div>
-</div>
 </body>
 
 </html>

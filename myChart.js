@@ -54,8 +54,8 @@ function logCountryCode() {
                 datasets: [{
                     label: 'Population, ' + countryName,
                     data: data,
-                    borderColor: 'rgba(129, 214, 227)',
-                    backgroundColor: 'rgba(129, 214, 227, 0.4)',
+                    borderColor: 'rgba(76, 181, 174)',
+                    backgroundColor: 'rgba(76, 181, 174, 0.4)',
                 }]
             },
             options: {
