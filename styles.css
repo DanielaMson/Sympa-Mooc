@@ -4,14 +4,17 @@ header {
     opacity: 0.3;
     height: 200px !important;
     display: flex;
-    align-items: center
+    align-items: center;
 }
+
 .h1{
     color: #4CB5AE;
     margin: auto;
     vertical-align: bottom;
     padding-left: 10px;
+    opacity: 1;
 }
+
 
 
 body{
@@ -20,7 +23,6 @@ body{
 .content {
     text-align: center;
     margin-top: 1rem;
-
 }
 
 .link{
@@ -31,27 +33,31 @@ body{
 .textinput{
     height: 39px;
     text-transform: uppercase;
+    text-align: center;
+    color: #4CB5AE;
     position: relative;
     background: none;
     border: 0;
     font-size: 18px;
     font-weight: 400;
-    
-    
 }
 ::placeholder{
     color: #4CB5AE;
 }
 
 .btn-outline-dark{
-    color:#4CB5AE;
+    color:#fff;
     border-color: #4CB5AE;
     height: 38px;
+    
 }
 
 .graph-container {
     width: 75vw;
     margin:auto;
+    padding-bottom: 5%;
+    padding-top: 2%;
+
 }
 
 .tooltip {
@@ -76,3 +82,13 @@ body{
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
+  footer {
+    display: flex;
+    background-color: #4CB5AE;
+    color: #fff;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-left: 95%;
+ }
