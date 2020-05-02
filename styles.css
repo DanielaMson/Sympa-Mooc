@@ -43,6 +43,7 @@ body{
 }
 ::placeholder{
     color: #4CB5AE;
+    width: inherit;
 }
 
 .btn-outline-dark{
@@ -66,9 +67,9 @@ body{
   }
 
   .tooltip .tooltiptext {
-    width: 120px;
+    width: 180px;
     top: 100%;
-    left: 50%;
+    left: 30%;
     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
     visibility: hidden;
     background-color: #4CB5AE;
