@@ -1,10 +1,23 @@
 header {
+    display: flex;
+    align-items: center;
+    height: 200px !important;
+    position: relative;
+    z-index: 1;
+}
+
+.header-image{
     background-image: url("https://images.unsplash.com/photo-1571616839329-0b2768e16763?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1648&q=80");
     background-position: center;
     opacity: 0.3;
-    height: 200px !important;
-    display: flex;
-    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .h1{
@@ -12,6 +25,7 @@ header {
     margin: auto;
     vertical-align: bottom;
     padding-left: 10px;
+    z-index: 2;
     opacity: 1;
 }
 
